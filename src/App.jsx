@@ -2,8 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react'
 import './App.css'
 import Header from './components/header'
+import Menu from './components/home'
 import Sidebar from './components/sidebar'
-import Home from './components/home'
 import ProductsList from './components/products'
 import Footer from './components/footer'
 
@@ -13,9 +13,9 @@ function App() {
       <div className=''>
         <Header />
       </div>
-      <div className="d-flex jusify-content-center">
+      <div className="">
         <div>
-          <Sidebar />
+          <Menu />
         </div>
         <div>
           <ProductsList />

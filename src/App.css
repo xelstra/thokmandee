@@ -124,14 +124,17 @@ a {
 
 .categories {
   background-color: var(--color1);
-  width: 200px;
-  word-wrap: break-word;
+  /* width: 200px; */
+  /* word-wrap: break-word;
   overflow: auto;
-  border-radius: 0px 10px 10px 0;
-  box-shadow: 0px 0px 3px 3px lightgray;
+  border-radius: 0px 10px 10px 0; */
+  /* box-shadow: 0px 0px 3px 3px lightgray; */
+}
+.categories div{
+  cursor: pointer;
 }
 
-.categories ul li {
+/* .categories ul li {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -140,13 +143,15 @@ a {
 
 .categories>ul>li {
   padding: 8px;
-}
+} */
 
 .first-div {
-  width: 100%;
+  background-color: #24662D;
+  z-index: 1;
+  /* width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 .first-div li {
@@ -198,7 +203,7 @@ a {
 .round {
   border-radius: 10px;
   border: none;
-  box-shadow: 0px 0px 5px 2px lightgray;
+  /* box-shadow: 0px 0px 5px 2px lightgray; */
 }
 
 .brands{
@@ -240,30 +245,6 @@ a {
   gap: 10px;
 }
 
-/* .nav-button {
-  margin: 8px;
-  width: 100px;
-}
-
-.product-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-*/
-
-/* .product-card {
-  width: calc(25% - 16px);
-  margin: 8px;
-  border: 1px solid #ccc;
-  padding: 16px;
-}
-
-@media (max-width: 768px) {
-  .product-card {
-    width: 100%;
-  }
-} */
 
 @keyframes slideInFromLeft {
   0% {
@@ -323,37 +304,47 @@ a {
   background-color: var(--color1) !important;
 }
 
-
-/* .carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 300px;
-  margin: 0 auto;
-}
-
-.carousel-item {
-  width: 100%;
-  overflow: hidden;
-}
-
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.3);
+/*  */
+.header {
+  background-color: #333;
   color: white;
-  border: none;
   padding: 10px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.menu-item {
+  margin-right: 20px;
+  position: relative;
   cursor: pointer;
 }
 
-.prev-button {
-  left: 0;
+.category {
+  position: relative;
+  display: inline-block;
 }
 
-.next-button {
-  right: 0;
-} */
+.subcategories {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color1);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 4px;
+  width: max-content;
+}
+
+.subcategory {
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+.menu-item:hover .subcategories {
+  display: block;
+}
