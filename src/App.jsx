@@ -1,9 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { useState } from 'react'
 import './App.css'
 import Header from './components/header'
 import Menu from './components/home'
-import Sidebar from './components/sidebar'
 import ProductsList from './components/products'
 import Footer from './components/footer'
 
@@ -17,7 +15,7 @@ function App() {
         <div>
           <Menu />
         </div>
-        <div>
+        <div className='ps-3 pe-3'>
           <ProductsList />
         </div>
       </div>
