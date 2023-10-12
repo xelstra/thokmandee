@@ -170,8 +170,8 @@ const ProductsList = () => {
             </div>
 
 
-            <div className='mt-2 text-center bg1 round p-2 pb-4 pt-4'>
-                <h2>MORE TO EXPLORE</h2>
+            <div className='mt-2 bg1 round p-2 pb-4 pt-4'>
+                <h2 className='text-center'>MORE TO EXPLORE</h2>
                 <div className="product-group d-flex justify-content-between align-items-center gap-1">
                     <button className="nav-button" onClick={handlePrevious}>
                         <FontAwesomeIcon icon={faAngleLeft} />
